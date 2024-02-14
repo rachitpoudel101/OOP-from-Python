@@ -24,3 +24,5 @@ self.name = name
 Creating the Objects
 s1 = student("John Doe")
 print(s1.name)
+
+self parameter is a reference ro the current intance of the calss and is used to access variables the belongs to the class. 
