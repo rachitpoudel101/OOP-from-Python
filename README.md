@@ -26,3 +26,9 @@ s1 = student("John Doe")
 print(s1.name)
 
 self parameter is a reference ro the current intance of the calss and is used to access variables the belongs to the class. 
+
+Class & Instance Attributes 
+
+There is two type of attributes :
+1. Class Attributes: The Attributes in class which  own and same to all objects.
+2. Instance Attruibutes: The attributes which is different to the different object.
