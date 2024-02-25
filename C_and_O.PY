@@ -18,6 +18,8 @@ class student:
         self.rollnumber = rollnumber
 # Here self is a reference to the object
 
+    def hello(self):
+        print("Hello",self.name)
 #taking user input  to create the object 
 
 name1 = input("enter the name of the student 1:")
@@ -37,4 +39,5 @@ print("\nThe Details of ",s2.name," are as follows : ")
 print("Name : ",s2.name)
 print("Roll Number : ",s2.rollnumber)
 print(s1.collage_name)
+s1.hello() # calling the method.
 
