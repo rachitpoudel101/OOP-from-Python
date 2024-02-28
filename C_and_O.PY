@@ -16,6 +16,11 @@ class student:
     def __init__(self,name,rollnumber): # this function is called when an object of a class is created
         self.name = name #Instance Attributes.
         self.rollnumber = rollnumber
+
+# using @staticmethod to use the static method with out giveing the self parameter.
+    @staticmethod
+    def Hello ():
+        print ("Hello Everyone.")
 # Here self is a reference to the object
 
     def hello(self):
@@ -42,6 +47,7 @@ print("\nThe Details of ",s2.name," are as follows : ")
 print("Name : ",s2.name)
 print("Roll Number : ",s2.rollnumber)
 print(s1.collage_name)
+s1.Hello() #Calling the static method to print in the console.
 s2.hello()
 s1.hello() # calling the method.
 print(s1.get_rollnumber())
@@ -49,23 +55,23 @@ print(s2.get_rollnumber())
 
 
 
-#Question for the methods :
+# #Question for the methods :
 
-class student:
-    def __init__(self,name,marks):
-        self.name =name
-        self.marks =marks
+# class student:
+#     def __init__(self,name,marks):
+#         self.name =name
+#         self.marks =marks
 
-    def get_average(self):
-        sum = 0
-        for val in self.marks:
-            sum +=val
-        print("HI",self.name,"Your avg score is",sum/3)
+#     def get_average(self):
+#         sum = 0
+#         for val in self.marks:
+#             sum +=val
+#         print("HI",self.name,"Your avg score is",sum/3)
 
-s1 = student("Sparsha",[60,55,60])
-s1.get_average()
+# s1 = student("Sparsha",[60,55,60])
+# s1.get_average()
 
-#Manupaliting  the attributes values.
-s1.name = "Rachit"
-s1.marks = [60,70,65]
-s1.get_average()
+# #Manupaliting  the attributes values.
+# s1.name = "Rachit"
+# s1.marks = [60,70,65]
+# s1.get_average()
