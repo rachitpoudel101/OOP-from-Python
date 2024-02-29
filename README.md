@@ -39,3 +39,10 @@ Methods that don't use the self parameter (Work at class level)
 class method is called static method.
 "Decorators allow us to wrap another function in order to extend the behaviour of the wrapped function,without parmanetly modifying it.
 **@staticmethod** is the decoder. it is the type of decoder that convert the normal function to static function/method.
+
+
+## Abstraction 
+Hiding the implementaion details of a class and only showing the necessary features to the user.
+
+## Encapluation
+Wrapping data and function into a single unit(Object)

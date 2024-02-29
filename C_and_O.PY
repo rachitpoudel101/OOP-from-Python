@@ -11,47 +11,47 @@
 # print(s1.Address)
 
 # creating the class
-class student:
-    collage_name = "Herald Collage Kathmandu." #Class Attributes 
-    def __init__(self,name,rollnumber): # this function is called when an object of a class is created
-        self.name = name #Instance Attributes.
-        self.rollnumber = rollnumber
+# class student:
+#     collage_name = "Herald Collage Kathmandu." #Class Attributes 
+#     def __init__(self,name,rollnumber): # this function is called when an object of a class is created
+#         self.name = name #Instance Attributes.
+#         self.rollnumber = rollnumber
 
-# using @staticmethod to use the static method with out giveing the self parameter.
-    @staticmethod
-    def Hello ():
-        print ("Hello Everyone.")
-# Here self is a reference to the object
+# # using @staticmethod to use the static method with out giveing the self parameter.
+#     @staticmethod
+#     def Hello ():
+#         print ("Hello Everyone.")
+# # Here self is a reference to the object
 
-    def hello(self):
-        print("Hello",self.name)
+#     def hello(self):
+#         print("Hello",self.name)
 
-    def get_rollnumber (self):
-        return self.rollnumber
-#taking user input  to create the object 
+#     def get_rollnumber (self):
+#         return self.rollnumber
+# #taking user input  to create the object 
 
-name1 = input("enter the name of the student 1:")
-rollnumber1 = input ("enter the RollNumebr of the Student 1:")
-s1 = student(name1,rollnumber1)
+# name1 = input("enter the name of the student 1:")
+# rollnumber1 = input ("enter the RollNumebr of the Student 1:")
+# s1 = student(name1,rollnumber1)
 
-name2 = input("enter the name of the student 2:")
-rollnumber2 = input ("enter the RollNumebr of the Student 2:")
-s2 = student(name2,rollnumber2)
+# name2 = input("enter the name of the student 2:")
+# rollnumber2 = input ("enter the RollNumebr of the Student 2:")
+# s2 = student(name2,rollnumber2)
 
-#printing the details of the student 
-print("The Details of ",s1.name,"are as follows : ")
-print("Name : ",s1.name )
-print("Roll Number : ",s1.rollnumber)
-print(s1.collage_name)
-print("\nThe Details of ",s2.name," are as follows : ")
-print("Name : ",s2.name)
-print("Roll Number : ",s2.rollnumber)
-print(s1.collage_name)
-s1.Hello() #Calling the static method to print in the console.
-s2.hello()
-s1.hello() # calling the method.
-print(s1.get_rollnumber())
-print(s2.get_rollnumber())
+# #printing the details of the student 
+# print("The Details of ",s1.name,"are as follows : ")
+# print("Name : ",s1.name )
+# print("Roll Number : ",s1.rollnumber)
+# print(s1.collage_name)
+# print("\nThe Details of ",s2.name," are as follows : ")
+# print("Name : ",s2.name)
+# print("Roll Number : ",s2.rollnumber)
+# print(s1.collage_name)
+# s1.Hello() #Calling the static method to print in the console.
+# s2.hello()
+# s1.hello() # calling the method.
+# print(s1.get_rollnumber())
+# print(s2.get_rollnumber())
 
 
 
@@ -75,3 +75,28 @@ print(s2.get_rollnumber())
 # s1.name = "Rachit"
 # s1.marks = [60,70,65]
 # s1.get_average()
+
+## Abstration 
+
+# Define a class named 'Car'
+class Car:
+    # Define the constructor method '__init__' which initializes the object's attributes
+    def __init__(self):
+        # Initialize attributes 'acc', 'brk', and 'clutch' to False
+        self.acc = False  # Represents whether the accelerator is pressed
+        self.brk = False  # Represents whether the brake is pressed
+        self.clutch = False  # Represents whether the clutch is pressed
+
+    # Define a method named 'start' to start the car
+    def start(self):
+        # Engage the clutch
+        self.clutch = True
+        # Turn on the ignition (start the engine)
+        self.acc = True
+        # Print a message indicating that the car has started
+        print("Car Started....")
+
+# Create an instance of the 'Car' class named 'car1'
+car1 = Car()
+# Call the 'start' method of the 'car1' object to start the car
+car1.start()
