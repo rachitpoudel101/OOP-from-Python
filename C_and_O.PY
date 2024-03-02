@@ -172,9 +172,11 @@ class ToyotaCar(car):             #Child class
 class fotuner(ToyotaCar):         # Child Class
     def __init__(self,type):
         self.type = type
-
+        super().__init__(brand="Fortuner.") #  super calss to use the private parent class attributes.
+        super().stop()
 car4 = fotuner("Diesel")
 print(car4.start())
+print(car4.brand)
 
 
 
@@ -191,3 +193,37 @@ c1 = C()
 print(c1.varA)
 print(c1.varB)
 print(c1.varC)
+
+
+
+#Class Methods 
+
+class Person:
+    Name = "Rachit"
+
+    @classmethod
+    def changename(cls,name): # there cls is references to the classs Person.
+        cls.Name = name
+    
+p1 = Person()
+p1.changename("Sparsha")
+print(p1.Name)
+
+#property methods
+
+class student:
+    def __init__(self, compu, AI, collab):
+        self.compu = compu
+        self.AI = AI
+        self.collab = collab
+
+
+    @property
+    def Percentage(self):
+        return str((self.compu + self.AI +self.collab)/3) + "%"
+    
+st1 = student(65, 70, 75)
+print(st1.Percentage)
+
+st1.AI = 65
+print(st1.Percentage)
