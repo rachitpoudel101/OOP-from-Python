@@ -61,5 +61,8 @@ When the one class (child/derived) deives the properties and methods of the anot
 3. Multiple Inheritance 
 
 
+## Polimorphism: (**Operator overloading**)
+ when same operatopr is allowed to have different meaning according to the context.
+
 ## Encapluation
 Wrapping data and function into a single unit(Object)

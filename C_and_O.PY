@@ -227,3 +227,35 @@ print(st1.Percentage)
 
 st1.AI = 65
 print(st1.Percentage)
+
+# Polimorphism: (Operator overloading)
+
+print(3+5) # answwer is 8 
+print("Rachit" + "Poudel") # the Answer is Rachit Poudel concating the srtings.
+print([1,2,3,4] + [6,7,8,9]) # the + sign is used to merge the list.
+
+
+# use of opertator dunder function in complex number
+
+class complex:
+    def __init__(self, real, img):
+        self.real = real
+        self.img = img
+    
+    def showNumber(self):
+        print(self.real,"i +",self.img ,"j")
+
+    def __add__(self, num2):
+        newReal =self.real + num2.real 
+        newImg = self.img + num2.img
+        return complex(newReal,newImg)
+    
+
+num1 = complex(1,4)
+num1.showNumber()
+
+num2 = complex(5,7)
+num2.showNumber()
+
+num3 = num1+num2
+num3.showNumber()
